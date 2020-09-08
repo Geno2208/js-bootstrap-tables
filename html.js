@@ -180,6 +180,7 @@ function _getNode(type, paramObject) {
             name,
             placeholder,
             property,
+            readonly,
             rel,
             role,
             rowspan,
@@ -282,6 +283,9 @@ function _getNode(type, paramObject) {
         }
         if (property) {
             node.setAttribute(`property`, property);
+        }
+        if (rel) {
+            node.setAttribute(`readonly`, ``);
         }
         if (rel) {
             node.setAttribute(`rel`, rel);
